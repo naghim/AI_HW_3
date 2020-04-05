@@ -23,6 +23,10 @@ A heurisztikus függvény mintákhoz rendel értékeket, minél jobb, előnyöse
 Egy adott állapothoz rendelünk egy 0-tól 8-ig terjedő számértéket, ahol a 4 a semleges, a 8-as a gép biztos győzelme és a 0-ás a gép biztos vesztése.
 
 A program C++ nyelven lett megírva.
+
+___
+___
+
   
 ## Task  
 Write a program that allows you to play against the computer using the alpha-beta pruning algorithm. No graphical interface required. Write a detailed description of the heuristic function.
