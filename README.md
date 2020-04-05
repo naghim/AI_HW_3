@@ -13,7 +13,9 @@ A parancssor argumentumain keresztül legyen konfigurálható:
 
 ### Megoldás
 A választott játék a Connect 4: rakjunk ki 4 "korongot" vízszintesen, átlósan vagy függőlegesen.
+A heurisztikus függvény mintákhoz rendel értékeket, mindél jobb, előnyösebb helyzet a gép számára a vizsgált állapot, annál nagyobb számot térít vissza, minél rosszabb, annál kisebbet. Majd ezeket összegzi.
 
+A program C++ nyelven lett megírva.
   
 ## Task  
 Write a program that allows you to play against the computer using the alpha-beta pruning algorithm. No graphical interface required. Write a detailed description of the heuristic function.
@@ -24,3 +26,5 @@ It should be configured via the command line arguments:
 
 ### Solution
 The game of choice is Connect 4: lay out 4 "discs" horizontally, diagonally or vertically.
+
+The code was written in C++.
