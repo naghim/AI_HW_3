@@ -13,7 +13,14 @@ A parancssor argumentumain keresztül legyen konfigurálható:
 
 ### Megoldás
 A választott játék a Connect 4: rakjunk ki 4 "korongot" vízszintesen, átlósan vagy függőlegesen.
-A heurisztikus függvény mintákhoz rendel értékeket, mindél jobb, előnyösebb helyzet a gép számára a vizsgált állapot, annál nagyobb számot térít vissza, minél rosszabb, annál kisebbet. Majd ezeket összegzi.
+A heurisztikus függvény mintákhoz rendel értékeket, minél jobb, előnyösebb helyzet a gép számára a vizsgált állapot, annál nagyobb számot térít vissza, minél rosszabb, annál kisebbet. Majd ezeket összegzi. További információk a következő fájlban találhatóak a "mintákkal" kapcsolatosan: [myTrick.xlsx](https://github.com/naghim/AI_HW_3/blob/master/myTrick.xlsx), ahol:
+ * 1. állapotok sorszáma
+ * 2-5. állapotok leírása
+ * 8-11. pesszimista megközelítések
+ * 14-17. optimista megközelítések
+ * 20. végeredmény, amit a 12-18. részeredményekből számolunk ki
+
+Egy adott állapothoz rendelünk egy 0-tól 8-ig terjedő számértéket, ahol a 4 a semleges, a 8-as a gép biztos győzelme és a 0-ás a gép biztos vesztése.
 
 A program C++ nyelven lett megírva.
   
