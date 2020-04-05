@@ -14,11 +14,11 @@ A parancssor argumentumain keresztül legyen konfigurálható:
 ### Megoldás
 A választott játék a Connect 4: rakjunk ki 4 "korongot" vízszintesen, átlósan vagy függőlegesen.
 A heurisztikus függvény mintákhoz rendel értékeket, minél jobb, előnyösebb helyzet a gép számára a vizsgált állapot, annál nagyobb számot térít vissza, minél rosszabb, annál kisebbet. Majd ezeket összegzi. További információk a következő fájlban találhatóak a "mintákkal" kapcsolatosan: [myTrick.xlsx](https://github.com/naghim/AI_HW_3/blob/master/myTrick.xlsx), ahol:
- * 1. állapotok sorszáma
- * 2-5. állapotok leírása
- * 8-11. pesszimista megközelítések
- * 14-17. optimista megközelítések
- * 20. végeredmény, amit a 12-18. részeredményekből számolunk ki
+ * 1-es sor: állapotok sorszáma
+ * 2-5 sorok: állapotok leírása
+ * 8-11 sorok: pesszimista megközelítések
+ * 14-17 sorok: optimista megközelítések
+ * 20-as sor: végeredmény, amit a 12-18. részeredményekből számolunk ki
 
 Egy adott állapothoz rendelünk egy 0-tól 8-ig terjedő számértéket, ahol a 4 a semleges, a 8-as a gép biztos győzelme és a 0-ás a gép biztos vesztése.
 
@@ -32,6 +32,14 @@ It should be configured via the command line arguments:
   * `-t <N>` - maximum `N` seconds of thinking time
 
 ### Solution
-The game of choice is Connect 4: lay out 4 "discs" horizontally, diagonally or vertically.
+The game of choice is Connect 4: lay out 4 "discs" horizontally, diagonally or vertically. The heuristic function assigns values to patterns, better situations for the machine returns higher numbers. We will then summarize these numbers. For more information about these "patterns," see [myTrick.xlsx](https://github.com/naghim/AI_HW_3/blob/master/myTrick.xlsx), where:
+
+ * row #1 - numbers of states
+ * rows 2-5 - description of states
+ * rows 8-11 - pessimistic approaches
+ * rows 14-17 - optimistic approaches
+ * row #20 - final result, which is calculated from partial results (rows 12-18)
+
+A given state is assigned a numeric value from 0 to 8, where 4 is the neutral, 8 is the sure victory of the machine, and 0 is the sure loss of the machine.
 
 The code was written in C++.
